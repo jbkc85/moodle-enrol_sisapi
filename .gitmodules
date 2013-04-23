@@ -1,0 +1,3 @@
+[submodule "sislib"]
+	path = sislib
+	url = https://github.com/jbkc85/sisapi-class-php.git
