@@ -161,8 +161,8 @@ class enrol_sisapi_plugin extends enrol_plugin {
         if( empty($apiuserdata) ){
             $userType = 'teacher';
             //$apiuser =$api->getUser($api->formQuery($localuserfield,$user),
+            //    $type);
             $apiuser = $api->getUser( $user,$localuserfield,$userType );
-                $type);
             if( $library == 'learnsprout' ){
                 $apiuserdata = $apiuser;
             } else {
