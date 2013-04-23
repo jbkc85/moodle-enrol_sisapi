@@ -136,6 +136,9 @@ class enrol_sisapi_plugin extends enrol_plugin {
         }
 
 	$localuserfield = $this->get_config('localuserfield');
+	if( $user->$localuserfield == '' ){
+		return false;
+	}
 
         // TODO: Wrap logic in statement to query for teacher if student doesn't
         // return a valid student object
@@ -156,8 +159,9 @@ class enrol_sisapi_plugin extends enrol_plugin {
         }
 
         if( empty($apiuserdata) ){
-            $type = 'teacher';
-            $apiuser =$api->getUser($api->formQuery($localuserfield,$user),
+            $userType = 'teacher';
+            //$apiuser =$api->getUser($api->formQuery($localuserfield,$user),
+            $apiuser = $api->getUser( $user,$localuserfield,$userType );
                 $type);
             if( $library == 'learnsprout' ){
                 $apiuserdata = $apiuser;

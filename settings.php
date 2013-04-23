@@ -54,10 +54,10 @@ if ($ADMIN->fulltree) {
     $settings->add(new admin_setting_configselect('enrol_sisapi/localuserfield', get_string('localuserfield', 'enrol_sisapi'), '', 'idnumber', $options));
 
     $options = array('id'=>'id', 'shortname'=>'shortname', 'fullname'=>'fullname');
-    $settings->add(new admin_setting_configselect('enrol_sisapi/localrolefield', get_string('localrolefield', 'enrol_sisapi'), '', 'shortname', $options));
+    //$settings->add(new admin_setting_configselect('enrol_sisapi/localrolefield', get_string('localrolefield', 'enrol_sisapi'), '', 'shortname', $options));
 
     $options = array('id'=>'id', 'idnumber'=>'idnumber');
-    $settings->add(new admin_setting_configselect('enrol_sisapi/localcategoryfield', get_string('localcategoryfield', 'enrol_sisapi'), '', 'id', $options));
+    //$settings->add(new admin_setting_configselect('enrol_sisapi/localcategoryfield', get_string('localcategoryfield', 'enrol_sisapi'), '', 'id', $options));
 
     $caching = array('none'=>'none', '1 day'=>'+1 day', '5 days'=>'+5 days', 'week'=>'+1 week');    
     $settings->add(new admin_setting_configselect('enrol_sisapi/localcaching', get_string('localcaching','enrol_sisapi'), get_string('localcaching_desc','enrol_sisapi'), 'id', $caching));
