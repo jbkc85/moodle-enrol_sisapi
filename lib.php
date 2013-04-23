@@ -92,7 +92,9 @@ class enrol_sisapi_plugin extends enrol_plugin {
         }
 
 	$library = strtolower($this->get_config('apitype'));
-        require_once("$CFG->dirroot/local/sislib/$library.class.php");
+	// Use SISLIB Local to module unless otherwise configured...
+        //require_once("$CFG->dirroot/local/sislib/$library.class.php");
+        require_once("$CFG->dirroot/enrol/sisapi/sislib/$library.class.php");
 
         switch( $library ){
             case "clever":
