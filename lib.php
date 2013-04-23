@@ -143,9 +143,9 @@ class enrol_sisapi_plugin extends enrol_plugin {
             debugging('Query params:'.$api->formQuery($localuserfield,$user));
 	}
         */
-        $usertype = 'student';
+        $userType = 'student';
 	//$apiuser =$api->getUser($api->formQuery($localuserfield,$user),$type);
-        $apiuser = $api->getUser( $user,$localuserfield,$usertype );
+        $apiuser = $api->getUser( $user,$localuserfield,$userType );
 
         if( $library == 'learnsprout' ){
             $apiuserdata = $apiuser;
@@ -170,7 +170,7 @@ class enrol_sisapi_plugin extends enrol_plugin {
         } else {
             $apiuserid = $apiuser->data[0]->data->id;
         }
-        $apicoursecall = $api->getAssociatedObjects( $apiuserid, 'sections', "{$type}" );
+        $apicoursecall = $api->getAssociatedObjects( $apiuserid, 'sections', "{$userType}" );
 /**
         if( debugging() ){
             debugging('Found '.count($apicoursecall).' API Courses');
