@@ -5,8 +5,14 @@ Installation Instructions
 
 1) Download or Clone the file from https://github.com/jbkc85/moodle-enrol\_sisapi into your MOODLEDIR/enrol folder
 
-* https://github.com/jbkc85/moodle-enrol\_sisapi/archive/master.zip
+https://github.com/jbkc85/moodle-enrol\_sisapi/archive/master.zip
+
+OR 
+
 * git clone https://github.com/jbkc85/moodle-enrol\_sisapi.git sisapi
+* cd sisapi
+* git submodule init
+* git submodule update
 
 2) Move the plugin into "enrol/sisapi" (already done if you copy pasted the git clone)
 
