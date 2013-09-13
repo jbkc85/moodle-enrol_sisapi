@@ -3,13 +3,13 @@ Installation Instructions
 
 # Install Plugin on your Server
 
-1) Download or Clone the file from https://github.com/jbkc85/moodle-enrol\_sisapi into your MOODLEDIR/enrol folder
+1) Download or Clone the file from https://github.com/jbkc85/moodle-enrol_sisapi into your MOODLEDIR/enrol folder
 
-https://github.com/jbkc85/moodle-enrol\_sisapi/archive/master.zip
+https://github.com/jbkc85/moodle-enrol_sisapi/archive/master.zip
 
 OR 
 
-* git clone https://github.com/jbkc85/moodle-enrol\_sisapi.git sisapi
+* git clone https://github.com/jbkc85/moodle-enrol_sisapi.git sisapi
 * cd sisapi
 * git submodule init
 * git submodule update
@@ -41,7 +41,7 @@ Testing Information
 ## SISAPI Settings for Clever:
 * API Library-> Clever
 * API URL-> https://api.getclever.com/v1.1/
-* API Key-> DEMO\_KEY
+* API Key-> DEMO_KEY
 * Enable SSL by Default -> TRUE
 
 ### Testing Clever (Create this user)
